@@ -1,0 +1,50 @@
+<Html>
+    <head>
+        <TITLE>UNderstanding HTML TABLES</TITLE>
+      <!--<style > *{ border : 2px solid red;}</style>-->
+
+      <style>
+        table,tr,th,td{
+            border : 2px solid greenyellow;
+            border-collapse:collapse;
+        }
+      </style>
+    </head>
+
+    <body>
+           <TABLE>
+            <thead>
+            <tr>
+                <th>AGE</th>
+               <th colspan="2">NAME</th>
+               
+               <th>SALARY</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>2</td>
+                <td>RIMSHA</td>
+                <td>Mujeeb</td>
+                
+                <td rowspan="2">3000</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td colspan="2">Rimsha</td>
+                
+                
+            </tr>
+            <tr>
+                <td>45</td>
+                <td colspan="2"><q>rty</q></td>
+                <td>6000</td>
+            </tr>
+            <tfoot>
+                <tr>
+                   <td>  Salary sum</td>
+                   <td colspan="2">12000</td>
+                </tr>
+            </tfoot>
+           </TABLE> 
+    </body>
+</Html>
