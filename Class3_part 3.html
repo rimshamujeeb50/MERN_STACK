@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS COMBINATORS</title>
+    <style>
+          div p{
+            color:red;
+          }
+          
+          div + p {
+            background-color: violet;
+          }
+
+          p+ h1{
+            color:green;
+          }
+          
+          p ~ h1{
+            background-color: aquamarine;
+          }
+    </style>
+</head>
+<body>
+
+
+    <p> Paragraph in body .It will nit change in red color as it is nit decendent of div</p>
+   
+    <div >
+    <p>Text p 1</p>
+    <p>Text p 2</p>
+    <p>Text p 3</p>
+    <p>Text p 4</p>
+    </div>
+    <h1>
+        YOUR HLDY
+    </h1>
+    <a href="">Google</a>
+    <p>WELCOME</p>
+    <P>MOVIE</P>
+    <h1>Heading</h1>
+    <div>
+        <h1>Heading hjdsljha</h1>
+    </div>
+    
+
+    <p>hi</p>
+    <P>hey</P>
+    <h1>Head</h1>
+
+</body>
+</html>

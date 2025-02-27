@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS COMBINATORS</title>
+    <style>
+          div p{
+            color:red;
+          }
+
+          .main .para{
+
+            color :black;
+          }
+
+          div > p{
+               background-color: wheat;
+               /* targets the immediate children of div tag i.e tags under section container will not be considered becoz they are not immediate but 2nd level children,only div children will be considered*/
+          }
+
+        .main > .para{
+              background-color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+
+    <p> Paragraph in body .It will nit change in red color as it is nit decendent of div</p>
+    <div class="main">
+
+    <p>Text p 1</p>
+    <p  class="para">Text p 2</p>
+    <p>Text p 3</p>
+    <p>Text p 4</p>
+
+    <div >
+        <p>inner text1</p>
+        <p  class="para">inner text2</p>
+        <p>inner text3</p>
+    </div>
+
+    <section ><!-- these p tags also wiill be targeted becoz they are also decendent odf div -->
+        <p>Section inner text1</p>
+        <p  class="para">Section inner text2</p>
+        <p>Section inner text3</p>
+    </section>   
+
+    </div>
+</body>
+</html>
